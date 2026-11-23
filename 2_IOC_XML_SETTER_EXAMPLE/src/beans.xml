@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+	<bean id="emp" class="com.entity.Employee">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="Yogeshwar"></property>
+		<property name="city" value="Pune"></property>
+		
+		<property name="domain">             
+		
+		<list>
+		
+		<value>FrontEnd</value>
+		<value>BackEnd</value>
+		
+		</list>
+		
+		</property>
+
+	</bean>
+	
+		<bean id="std" class="com.entity.Student" scope = "prototype">
+
+		<property name="id" value="102"></property>
+		<property name="name" value="Sujit"></property>
+		<property name="city" value="Pune"></property>
+
+	</bean>
+
+</beans>

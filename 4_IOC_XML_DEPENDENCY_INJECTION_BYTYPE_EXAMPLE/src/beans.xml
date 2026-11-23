@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+	<bean id="deparment" class="com.entity.Department">
+
+		<property name="id" value="1"></property>
+		<property name="name" value="IT"></property>
+
+	</bean>
+
+	<bean id="emp" class="com.entity.Employee" autowire = "byType"> <!-- Autowiring is used for automatic dependency injection. -->
+
+		<property name="id" value="101"></property>
+		<property name="name" value="Yogeshwar"></property>
+		<property name="city" value="Pune"></property>
+		<!-- <property name="dep" ref="deparment"></property>   This is Used When we want to add Dependency Injection Manually --> 
+
+
+	</bean>
+
+</beans>
